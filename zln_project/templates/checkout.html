@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Checkout Page</h1>
+  <nav>
+    <a href="/cart">Cart</a> |
+    <a href="/home">Home</a>
+  </nav>
+
+  <p>AI predicts next page: {{ predicted }}</p>
+  <script>
+    setTimeout(function(){
+        window.location.href = "/" + "{{ predicted }}";
+    }, 2000);
+  </script>
+</body>
+</html>

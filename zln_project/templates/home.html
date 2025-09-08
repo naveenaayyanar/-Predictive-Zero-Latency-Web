@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Home Page</h1>
+  <nav>
+    <a href="/products">Products</a> |
+    <a href="/about">About</a> |
+    <a href="/services">Services</a>
+  </nav>
+
+  <p>AI predicts next page: {{ predicted }}</p>
+  <script>
+    setTimeout(function(){
+        window.location.href = "/" + "{{ predicted }}";
+    }, 2000);
+  </script>
+</body>
+</html>
